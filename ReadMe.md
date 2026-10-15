@@ -1,6 +1,6 @@
  ## Tracking stellar composition
 
- Converting between [Fe/H], Z, X, Y, [C/Fe], [$\alpha$/Fe], $A_i$ = log$\text{log}_{10}$($\frac{N_i}{N_H}$) + 12, etc is the bane of my existence
+ Converting between [Fe/H], Z, X, Y, [C/Fe], [alpha/Fe], $A_i$ = log10($\frac{N_i}{N_H}$) + 12, etc is the bane of my existence
 
  So I made a class that will keep track of everything for me. Upon creation, an instance of the StarComp class has the Grevesse, Asplund, and Sauval 2007 solar mixture. One can procceed to change many of the values of the mixture, then get other values associated with the mixture (X,Y,Z, [Fe/H], etc).
  
