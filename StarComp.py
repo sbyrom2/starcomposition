@@ -292,9 +292,9 @@ class StarComp:
 
 	def rescale_to_Ntot(self):
 		Ntot_new = np.sum(self.N)
-		self.N = self.N * (Ntot_new / self.Ntot)
+		self.N = self.N * (self.Ntot / Ntot_new)
 		# also rescale isotopes
-		self.N_iso = self.N_iso * (Ntot_new / self.Ntot)
+		self.N_iso = self.N_iso * (self.Ntot / Ntot_new)
 		return None
 	
 	def set_Ntot(self,Ntot,i_know_what_im_doing=False):
@@ -335,5 +335,3 @@ class StarComp:
 		# called after changing isotope ratios
 		# I'm not doing this yet, so I don't need to implement it
 		return 0 
-
-s = StarComp()
